@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.amlo.shopping.activity.PlacedOrderActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="130dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:src="@drawable/delivery"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/adamina"
+                android:text="Thanks for shopping with Us! \n Your order has been succesfully placed. \nWe will not let you wait for more than 1440 minutes"
+                android:textAlignment="center"
+                android:textColor="@color/text_application_color"
+                android:textSize="15sp"/>
+
+            <Button
+                android:id="@+id/continue_shopping"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/btn_design"
+                android:ems="15"
+                android:layout_margin="10dp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/adamina"
+                android:paddingStart="10dp"
+                android:text="Continue Shopping with us"
+                android:layout_marginBottom="100dp"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

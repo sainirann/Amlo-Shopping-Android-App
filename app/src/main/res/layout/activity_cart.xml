@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.amlo.shopping.activity.CartActivity">
+
+    <TextView
+        android:id="@+id/cart_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/nav_header_color"
+        android:fontFamily="@font/adamina"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Shopping Bag"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cart_list_recycler"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/cart_heading"
+        android:layout_marginTop="5dp"
+        android:layout_above="@+id/proceed_to_checkout"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/product_box_design"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/proceed_to_checkout"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total $"
+            android:fontFamily="@font/adamina"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/proceed_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_design"
+            android:ems="10"
+            android:fontFamily="@font/adamina"
+            android:textColor="@android:color/white"
+            android:text="@string/place_order"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+</RelativeLayout>

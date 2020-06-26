@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bk"
+    tools:context="com.amlo.shopping.activity.OrderPlacementActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login_img"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/order_delivery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/adamina"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:layout_marginTop="50dp"
+            android:textAlignment="center"
+            android:text="Shipping Details"
+            android:ems="40"
+            android:textSize="30sp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:id="@+id/same_or_differentAddress"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/same_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="15"
+                android:checked="true"
+                android:fontFamily="@font/adamina"
+                android:textColor="#FDF9F9"
+                android:text="Use Same Address"/>
+            <RadioButton
+                android:id="@+id/different_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="15"
+                android:layout_weight="1"
+                android:fontFamily="@font/adamina"
+                android:textColor="#FDF9F9"
+                android:text="New Delivery Address"/>
+        </RadioGroup>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:visibility="invisible"
+            android:id="@+id/shipping_address"
+            android:layout_marginBottom="80dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/login_img"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="100dp"
+                android:layout_gravity="center_horizontal"
+                android:padding="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="50dp"
+                    android:id="@+id/delivery_addr">
+
+                    <EditText
+                        android:id="@+id/delivery_customer_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/login_img"
+                        android:ems="15"
+                        android:fontFamily="@font/adamina"
+                        android:hint="Name"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="10dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#FDF9F9"
+                        android:textColorHint="#FDF9F9"/>
+
+                    <EditText
+                        android:id="@+id/delivery_address_line_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/login_img"
+                        android:ems="15"
+                        android:fontFamily="@font/adamina"
+                        android:hint="Address Line 1"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="10dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#FDF9F9"
+                        android:textColorHint="#FDF9F9"/>
+                    <EditText
+                        android:id="@+id/delivery_address_line_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/login_img"
+                        android:ems="15"
+                        android:fontFamily="@font/adamina"
+                        android:hint="Address Line 2"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="10dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#FDF9F9"
+                        android:textColorHint="#FDF9F9"/>
+                    <EditText
+                        android:id="@+id/delivery_address_locality"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/login_img"
+                        android:ems="15"
+                        android:fontFamily="@font/adamina"
+                        android:hint="Locality"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="10dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#FDF9F9"
+                        android:textColorHint="#FDF9F9"/>
+                    <EditText
+                        android:id="@+id/delivery_address_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/login_img"
+                        android:ems="15"
+                        android:fontFamily="@font/adamina"
+                        android:hint="State and Zip Code"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="10dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#FDF9F9"
+                        android:textColorHint="#FDF9F9"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/order_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_design"
+        android:ems="15"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/adamina"
+        android:paddingStart="10dp"
+        android:text="Place Order"
+        android:visibility="invisible"
+        android:textAlignment="center"/>
+
+</RelativeLayout>

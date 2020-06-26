@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile"
+    tools:context="com.amlo.shopping.fragment.MyAccountFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="400dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical"
+            android:padding="22dp"
+            android:background="@drawable/login_img"
+            android:layout_gravity="center_vertical">
+            <TextView
+                android:id="@+id/pusernameid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundedcorners"
+                android:fontFamily="@font/adamina"
+                android:textColor="@color/borderColor"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_marginBottom="8dp"
+                />
+
+            <TextView
+                android:id="@+id/ppasswordid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/adamina"
+                android:background="@drawable/roundedcorners"
+                android:textColor="@color/borderColor"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_marginBottom="8dp"
+                />
+
+            <TextView
+                android:id="@+id/pinstitutionid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundedcorners"
+                android:textColor="@color/borderColor"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:fontFamily="@font/adamina"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/pemailid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundedcorners"
+                android:textColor="@color/borderColor"
+                android:paddingLeft="8dp"
+                android:fontFamily="@font/adamina"
+                android:paddingRight="8dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/pphoneid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundedcorners"
+                android:textColor="@color/borderColor"
+                android:paddingLeft="8dp"
+                android:fontFamily="@font/adamina"
+                android:paddingRight="8dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:fontFamily="@font/adamina"
+                android:background="#9001B6A5"
+                android:textColor="@android:color/white"
+                android:text="Edit Profile"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

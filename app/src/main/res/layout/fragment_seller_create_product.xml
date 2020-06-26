@@ -1,0 +1,127 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bk"
+    tools:context="com.amlo.shopping.fragment.SellerCreateProductFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@drawable/login_img"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/adamina"
+                android:textColor="@android:color/white"
+                android:padding="10dp"
+                android:layout_marginTop="120dp"
+                android:textAlignment="center"
+                android:text="Do you like to sell product ?"
+                android:ems="40"
+                android:textSize="25sp"/>
+            <EditText
+                android:id="@+id/seller_product_img"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/login_img"
+                android:ems="15"
+                android:fontFamily="@font/adamina"
+                android:hint="Product Image Url"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FDF9F9"
+                android:textColorHint="#FDF9F9"/>
+
+            <EditText
+                android:id="@+id/seller_product_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/login_img"
+                android:ems="15"
+                android:fontFamily="@font/adamina"
+                android:hint="Product Name"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FDF9F9"
+                android:textColorHint="#FDF9F9"/>
+
+            <Spinner
+                android:id="@+id/seller_spinner_category"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/adamina"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:popupBackground="#8c212226"
+                android:background="@drawable/spinner_design"/>
+
+            <EditText
+                android:id="@+id/seller_product_desc"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/login_img"
+                android:ems="15"
+                android:textSize="10sp"
+                android:fontFamily="@font/adamina"
+                android:hint="Product Description"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="#FDF9F9"
+                android:textColorHint="#FDF9F9"/>
+
+            <EditText
+              android:id="@+id/seller_product_price"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:layout_marginStart="10dp"
+              android:layout_marginEnd="10dp"
+              android:layout_marginTop="30dp"
+              android:background="@drawable/login_img"
+              android:ems="15"
+              android:fontFamily="@font/adamina"
+              android:hint="Product Price"
+              android:inputType="textPersonName"
+              android:paddingLeft="10dp"
+              android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+              android:textColor="#FDF9F9"
+              android:textColorHint="#FDF9F9"/>
+
+            <Button
+                android:id="@+id/seller_button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:hint="Select Category"
+                android:background="@drawable/btn_design"
+                android:ems="15"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/adamina"
+                android:paddingStart="10dp"
+                android:text="Sell Product"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

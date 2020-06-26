@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="color_slogan">#083002</color>
+    <color name="colorAccent">#00497A</color>
+    <color name="btn_background">#F0A508</color>
+    <color name="btn_border">#461F04</color>
+    <color name="welcome_app_name">#D8A856</color>
+    <color name="nav_header_color">#C1E7056F</color>
+    <color name="background_color_of_layout">#FDE6E5E5</color>
+    <color name="borderColor">#000000</color>
+    <color name="product_name">#161515</color>
+    <color name="product_short_desc">#292828</color>
+    <color name="about_text_color">#181717</color>
+    <color name="textBoxBackground">#FFFAFA</color>
+    <color name="text_application_color">#092FA2</color>
+    <color name="product_list_color">#05E981</color>
+    <color name="product_display_start">#44068E</color>
+    <color name="textview_border">#303E72</color>
+</resources>

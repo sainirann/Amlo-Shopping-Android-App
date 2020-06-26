@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/order_list_layout"
+    android:background="@drawable/product_design_background"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:id="@+id/order_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/artifika"
+                android:text="@string/we_love_to_shop_with_you"
+                android:textColor="@color/nav_header_color"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/order_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="@font/artifika"
+                android:text="@string/we_love_to_shop_with_you"
+                android:textColor="@color/product_display_start"
+                android:textSize="17sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="3dp"/>
+            <TextView
+                android:id="@+id/order_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="@font/artifika"
+                android:text="@string/we_love_to_shop_with_you"
+                android:textColor="@color/product_display_start"
+                android:textSize="17sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="3dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

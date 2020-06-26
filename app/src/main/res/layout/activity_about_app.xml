@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.amlo.shopping.activity.AboutAppActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/adamina"
+                android:textColor="@color/borderColor"
+                android:padding="10dp"
+                android:text="Amlooo"
+                android:textAlignment="center"
+                android:ems="15"
+                android:textSize="30sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/adamina"
+                android:textColor="@color/borderColor"
+                android:padding="10dp"
+                android:text="Introduction"
+                android:ems="15"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/adamina"
+                android:textColor="@color/about_text_color"
+                android:padding="10dp"
+                android:text="Amlooo is a one stop shop for all your fashion and lifestyle needs. Being largest e-commerce store for fashion and lifestyle products, Amlooo aims at providing a hassle free and enjoyable shopping experience to shoppers across the country with the widest range of brands and products on its portal. The brand is making a conscious effort to bring the power of fashion to shoppers with an array of the latest and trendiest products available in the country."
+                android:ems="15"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/adamina"
+                android:textColor="@color/borderColor"
+                android:padding="10dp"
+                android:text="Value proposition"
+                android:ems="15"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/adamina"
+                android:textColor="@color/about_text_color"
+                android:padding="10dp"
+                android:text="Amlooo's value proposition revolves around giving consumers the power and ease of purchasing fashion and lifestyle products online. Offerings such as the largest in-season product catalogue, 100% authentic products, cash on delivery and 30 day return policy make Amlooo, the preferred shopping destination in the country."
+                android:ems="15"
+                android:textSize="10sp"/>
+            <Button
+              android:id="@+id/load_data"
+              android:layout_width="match_parent"
+              android:layout_height="25dp"
+              android:layout_marginTop="10dp"
+              android:layout_marginStart="10dp"
+              android:layout_marginEnd="10dp"
+              android:background="@drawable/btn_design"
+              android:ems="15"
+              android:fontFamily="@font/adamina"
+              android:textColor="@android:color/white"
+              android:text="@string/load_data"
+              android:textAlignment="center"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

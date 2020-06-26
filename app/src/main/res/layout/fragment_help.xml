@@ -1,0 +1,115 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.amlo.shopping.fragment.HelpFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/adamina"
+            android:textColor="@color/borderColor"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:text="Amlooo"
+            android:textAlignment="center"
+            android:ems="15"
+            android:textSize="30sp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_marginBottom="50dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/help_background"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/adamina"
+                    android:textColor="@color/borderColor"
+                    android:padding="10dp"
+                    android:layout_marginTop="40dp"
+                    android:textAlignment="center"
+                    android:text="Contact Us"
+                    android:ems="20"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/adamina"
+                    android:textColor="@color/about_text_color"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:ems="20"
+                    android:text="Saishree Jayakumar \n\n 6692369490 \n\n enjoyshoppingamlo@gmail.com"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/adamina"
+                    android:textColor="@color/about_text_color"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:ems="20"
+                    android:text="Customer Support"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/adamina"
+                    android:textColor="@color/product_short_desc"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:ems="20"
+                    android:text="Hours are subject to change during holidays and special events."
+                    android:textSize="10sp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/adamina"
+                        android:textColor="@color/borderColor"
+                        android:textAlignment="textStart"
+                        android:ems="20"
+                        android:paddingStart="5dp"
+                        android:text="Monday - Friday"
+                        android:textSize="10sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/adamina"
+                        android:textColor="@color/borderColor"
+                        android:textAlignment="textEnd"
+                        android:ems="20"
+                        android:paddingEnd="5dp"
+                        android:text="9AM - 9PM PST"
+                        android:layout_marginBottom="20dp"
+                        android:textSize="10sp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

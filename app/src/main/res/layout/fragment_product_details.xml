@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.amlo.shopping.fragment.BuyerProductDetailsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/product_details_image"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/product_details_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/adamina"
+                android:text="@string/shop_with_you"
+                android:textAlignment="center"
+                android:textColor="@color/text_application_color"
+                android:textSize="25sp"/>
+
+            <TextView
+              android:id="@+id/product_details_category"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textAlignment="center"
+              android:layout_marginTop="5dp"
+              android:fontFamily="@font/adamina"
+              android:text="@string/shop_with_you"
+              android:textColor="@color/product_short_desc"
+              android:textSize="15sp" />
+
+            <TextView
+              android:id="@+id/product_details_info_heading"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginTop="5dp"
+              android:fontFamily="@font/adamina"
+              android:text="@string/prod_details"
+              android:textColor="@color/product_name"
+              android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/product_details_short_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/adamina"
+                android:text="@string/shop_with_you"
+                android:textAlignment="center"
+                android:textColor="@color/product_name"
+                android:textSize="15sp"/>
+
+            <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                android:id="@+id/qty_button_product"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                app:backGroundColor="@color/welcome_app_name"
+                app:textSize="8sp"/>
+
+            <Button
+                android:id="@+id/submit_product"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/btn_design"
+                android:ems="15"
+                android:fontFamily="@font/adamina"
+                android:textColor="@android:color/white"
+                android:text="@string/add_to_cart"
+                android:textAlignment="center"
+                android:layout_marginBottom="40dp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
